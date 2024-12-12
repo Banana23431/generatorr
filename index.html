@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<link rel="manifest" href="manifest.json">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+
+    <title>Генератор паролей</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <div>GenWord</div>
+        <div>
+            <div class="dropdown">
+                <a href="#" style="color: white; margin-right: 20px;">Наши проекты</a>
+                <div class="dropdown-content">
+                    <a href="genword.html">Генератор случайных чисел</a>
+                    <a href="genname.html">Генератор имен и фамилий</a>
+                    <a href="genrad.html">Генератор ников</a>
+                    <a href="index.html">Генератор паролей</a>
+                </div>
+            </div>
+            <a href="#" style="color: white;">Личный кабинет</a>
+        </div>
+    </header>
+        <section class="main-banner">
+                <div class="header-left">
+                    <h1>Генератор паролей</h1>
+                    <p>для социальных сетей и сайтов</p>
+                </div>
+                <div class="header-right">
+                <p>Подберём сотни надежных паролей для вас и сохраним ваши данные в безопасности</p>
+                <ul>
+                    <li>Надежные и сложные пароли</li>
+                    <li>Бесплатное использование</li>
+                </ul>
+                <button class="button">Попробуйте прямо сейчас!</button>
+            </div>
+    </section>
+    
+    <section class="content">
+        <section class="content-section">
+        <div class="border-top"></div>
+        <div class="content-section" style="background-color: #252422;">
+            <h2 style="color:#ffffff;">Важность паролей</h2>
+            <p style="color:#ffffff;">Суть важности паролей заключается в том, что использование надёжных паролей является ключевым элементом обеспечения безопасности личных данных и аккаунтов в интернете. Надежные пароли предотвращают несанкционированный доступ к конфиденциальной информации и защищают от кражи личных данных.
+                Создание и использование сложных паролей, состоящих из комбинации букв, цифр и символов, а также регулярное изменение паролей, являются основными принципами обеспечения безопасности. Использование генератора паролей поможет пользователям избежать риска использования легко угадываемых паролей.</p>
+            <section class="image">
+                <img src="v34_16.png">
+            </section>
+        </div>
+        <div class="border-bottom"></div>
+
+        <section class="content-section">
+            
+            <div class="password-generator">
+                <div class="generator-form">
+                    <h2 style=" margin-left:10px;">Составить пароли:</h2>
+                    <label style="margin-bottom: 20px; margin-right:10px;  padding: 10px;" for="length">Длина пароля:</label>
+                    <input type="number" id="length" value="12" min="4" max="32" style="width: 50px;">
+                    <br>
+                    <label style="margin-right:10px;  padding: 10px;" for="count">Количество паролей:</label>
+                    <input type="number" id="count" value="1" min="1" max="10" style="width: 50px;">
+                    <br>
+                    <label style="  padding: 10px;"><input type="checkbox" id="lowercase" checked> Нижний регистр</label><br>
+                    <label style="  padding: 10px;"><input type="checkbox" id="uppercase" checked> Верхний регистр</label><br>
+                    <label style="  padding: 10px;"><input type="checkbox" id="numbers" checked> Цифры</label><br>
+                    <label style="  padding: 10px;"><input type="checkbox" id="symbols" checked> Специальные символы</label><br>
+                    <br>
+                    <button class="button" id="generate-btn">Сгенерировать</button>
+                </div>
+                <div style="position: relative;">
+                <div class="generator-what">
+                    <h3 style=" margin-left:10px;">Генератор паролей — это инструмент или программа, предназначенные для создания случайных и сложных паролей. Основная цель использования генератора паролей заключается в обеспечении безопасности учетных записей, систем и данных.</h2>
+                </div>
+                <div class="password-list-container">
+                    <h2>Сгенерированные пароли:</h2>
+                    <ul id="password-list" class="password-list"></ul>
+                </div>
+                </div>
+            </div>
+        </section>
+       
+        <div class="content-section">
+            <h2>Советы по созданию надежных паролей</h2>
+            <ul>
+                <li>Используйте пароли длиной не менее 12 символов.</li>
+                <li>Комбинируйте буквы, цифры и специальные символы.</li>
+                <li>Избегайте использования личной информации, такой как имя или дата рождения.</li>
+                <li>Регулярно меняйте пароли и не используйте один и тот же пароль для разных аккаунтов.</li>
+            </ul>
+        </div>
+
+        <div class="content-section faq">
+            <h2>Часто задаваемые вопросы (FAQ)</h2>
+            <div class="faq-item">
+                <strong>Зачем нужен генератор паролей?</strong>
+                <p>Генератор паролей помогает создать надежные пароли, которые сложно угадать или подобрать.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Как работает генератор паролей?</strong>
+                <p>Он использует алгоритмы для случайной генерации паролей на основе ваших предпочтений.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Могу ли я использовать сгенерированные пароли для всех моих аккаунтов?</strong>
+                <p>Рекомендуется использовать уникальные пароли для каждого аккаунта для повышения безопасности.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Как часто нужно менять пароли?</strong>
+                <p>Рекомендуется менять пароли каждые 3-6 месяцев или сразу после утечки данных.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 GENWORD. ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+        <p>
+            <a href="#" style="color: white;">Политика конфиденциальности</a>
+            <a href="#" style="color: white;">Телеграм</a>
+            <a href="#" style="color: white;">ВКонтакте</a>
+        </p>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('generate-btn').addEventListener('click', function() {
+        const length = document.getElementById('length').value;
+        const count = document.getElementById('count').value;
+        const includeLowercase = document.getElementById('lowercase').checked;
+        const includeUppercase = document.getElementById('uppercase').checked;
+        const includeNumbers = document.getElementById('numbers').checked; 
+        const includeSymbols = document.getElementById('symbols').checked;
+
+        const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
+        const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const numberChars = '0123456789';
+        const symbolChars = '!@#$%^&*()_+[]{}|;:,.<>?';
+
+        let validChars = '';
+        if (includeLowercase) validChars += lowercaseChars;
+        if (includeUppercase) validChars += uppercaseChars;
+        if (includeNumbers) validChars += numberChars;
+        if (includeSymbols) validChars += symbolChars;
+
+        if (validChars.length === 0) {
+            alert('Выберите хотя бы один тип символов!');
+            return;
+        }
+
+        const passwordList = document.getElementById('password-list');
+        passwordList.innerHTML = ''; 
+
+        for (let j = 0; j < count; j++) {
+            let generatedPassword = '';
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * validChars.length);
+                generatedPassword += validChars[randomIndex];
+            }
+
+            const timeToCrack = calculateTimeToCrack(generatedPassword);
+            const timeText = timeToCrack > 1 ? `${timeToCrack.toFixed(2)} минут` : `${(timeToCrack * 60).toFixed(2)} секунд`;
+
+            const listItem = document.createElement('li');
+            listItem.className = 'password-item';
+            listItem.innerHTML = `Пароль: <strong>${generatedPassword}</strong> - Время взлома: ${timeText}`;
+            passwordList.appendChild(listItem);
+        }
+    });
+
+    function calculateTimeToCrack(password) {
+        const complexity = calculatePasswordComplexity(password);
+        const attemptsPerSecond = 1000000; 
+        const timeInSeconds = Math.pow(62, complexity) / attemptsPerSecond; 
+        return timeInSeconds / 60; 
+        }
+    
+        function calculatePasswordComplexity(password) {
+            let complexity = 0;
+            const uniqueChars = new Set(password).size;
+            if (/[a-z]/.test(password)) complexity += 26;
+            if (/[A-Z]/.test(password)) complexity += 26;
+            if (/[0-9]/.test(password)) complexity += 10;
+            if (/[^a-zA-Z0-9]/.test(password)) complexity += 32;
+    
+            return uniqueChars + complexity;
+        }
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+                    console.log('Service Worker зарегистрирован с областью:', registration.scope);
+                }, function(err) {
+                    console.log('Ошибка при регистрации Service Worker:', err);
+                });
+            });
+        }
+    </script>
+    
+    </body>
+    </html>

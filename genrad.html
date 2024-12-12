@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор ников</title>
+    <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <div>GenWord</div>
+        <div>
+            <div class="dropdown">
+                <a href="#" style="color: white; margin-right: 20px;">Наши проекты</a>
+                <div class="dropdown-content">
+                    <a href="genword.html">Генератор случайных чисел</a>
+                    <a href="genname.html">Генератор имен и фамилий</a>
+                    <a href="genrad.html">Генератор ников</a>
+                    <a href="index.html">Генератор паролей</a>
+                </div>
+            </div>
+            <a href="#" style="color: white;">Личный кабинет</a>
+        </div>
+    </header>
+    
+    <section class="main-banner">
+        <section class="header-content">
+            <section class="header-left">
+                <h1>Генератор ников</h1>
+                <p>для социальных сетей и игр</p>
+            </section>
+            <section class="header-right">
+                <p>Создайте уникальный ник всего за секунды! Наш генератор ников подарит вам имя, которое выделит вас из толпы. Будьте оригинальными и запоминающимися в любой игре — начните приключение с идеального ника</p>
+                <ul>
+                    <li>Мгновенные результаты: Всего одним нажатием кнопки вы получите набор случайных чисел, готовых к использованию!</li>
+                    <li>Настраиваемые параметры: Выбирайте диапазон значений, количество чисел в соответствии с вашими потребностями.</li>
+                    <li>Бесплатное использование!</li>
+                </ul>
+                <button class="button">Попробуйте прямо сейчас!</button>
+            </section>
+        </section>
+    </section>
+
+    <section class="content-section" style="background-color: #252422;">
+        <section class="header-left_v1">
+            <h2 style="color:#ffffff;">Генератор ников</h2>
+            <p style="color:#ffffff;">
+                Генератор ников — это программа или инструмент, который автоматически создает уникальные и креативные псевдонимы (ники) для пользователей. Такие генераторы часто используются в онлайн-играх, социальных сетях, форумах и других платформах, где требуется идентификация пользователя, включая:
+            </p>
+            <ul>
+                <li style="color:#ffffff;">Социальные сети: Генераторы помогают людям создать оригинальные псевдонимы для своих профилей.</li>
+                <li style="color:#ffffff;">Онлайн-игры: Игроки могут использовать генераторы для быстрого создания уникальных имен для своих персонажей.</li>
+                <li style="color:#ffffff;">Форумы и сообщества: Пользователи могут находить интересные ники для регистрации на различных платформах.</li>
+                <li style="color:#ffffff;">Мобильные приложения: Некоторые мобильные приложения, например, для знакомств или общения, предлагают пользователям создание ника через генератор.</li>
+                <li style="color:#ffffff;">Видеоплатформы: На видеоплатформах, таких как YouTube или Twitch, пользователи могут использовать генераторы для создания уникальных имен каналов.</li>
+            </ul>
+        </section>
+        <section class="image">
+            <p><img src="v68_73.png" width="310" height="210" alt="Генератор ников"></p>
+        </section>
+    </section>
+
+    <section class="content">
+        <div class="generator-container">
+            <h1>Генератор Ников</h1>
+            <label for="firstLetter">Первая буква:</label>
+            <input type="text" id="firstLetter" maxlength="1" required>
+    
+            <label for="minLength">Минимальная длина:</label>
+            <input type="number" id="minLength" min="1" value="3" required>
+    
+            <label for="maxLength">Максимальная длина:</label>
+            <input type="number" id="maxLength" min="1" value="8" required>
+    
+            <button onclick="generateNick()">Сгенерировать Ник</button>
+    
+            <div id="result"></div>
+        </div>
+
+        <div class="right-section">
+        <div class="content-info">
+            <p>Генератор ников — это программа или онлайн-инструмент, который автоматически создает уникальные и креативные никнеймы (псевдонимы) для пользователей.</p>
+        </div>
+
+        <div class="content-list">
+            <ul id="nickList">
+                Список: 
+            </ul>
+        </div>
+    </div>
+</section>
+        
+        <div class="content-section">
+            <h2>Советы по использованию генератора ников</h2>
+            <ul>
+                <li>Постарайтесь понять, для чего вам нужен ник. Будет ли он использоваться в игре, социальной сети, блоге или другом контексте? Это поможет вам выбрать подходящий стиль и тематику.</li>
+                <li>Подумайте о том, кто будет видеть ваш ник. Если это игровое сообщество, можно использовать более креативные и даже забавные ники. Для профессиональных платформ, таких как LinkedIn, лучше выбирать более серьезные имена.</li>
+                <li>Добавьте элементы, которые отражают вашу индивидуальность, увлечения или интересы. Например, если вы любите космос, можно использовать слова, связанные с этой темой, в вашем нике.</li>
+            </ul>
+        </div>
+
+        <div class="content-section faq">
+            <h2>Часто задаваемые вопросы (FAQ)</h2>
+            <div class="faq-item">
+                <strong>Что такое генератор ников?</strong>
+                <p>Генератор ников — это инструмент или программа, которая автоматически создает уникальные псевдонимы для пользователей. Он используется в различных контекстах, таких как онлайн-игры, социальные сети и форумы, чтобы помочь пользователям найти интересные и запоминающиеся имена.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Как работают генераторы ников?</strong>
+                <p>Генераторы ников используют алгоритмы для случайной генерации имен на основе заданных параметров. Они могут комбинировать слова, добавлять числовые символы или использовать синонимы для создания уникальных никнеймов.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Зачем использовать генератор ников?</strong>
+                <p>Генераторы ников помогают пользователям быстро находить оригинальные имена, которые могут быть трудны для создания самостоятельно. Это особенно полезно, когда пользователи сталкиваются с множеством уже занятых имен на платформах.</p>
+            </div>
+        </div>
+
+    <footer class="footer">
+        <p>© 2024 GENWORD. ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+        <p>
+            <a href="#" style="color: white;">Политика конфиденциальности</a>
+            <a href="#" style="color: white;">Телеграм</a>
+            <a href="#" style="color: white;">ВКонтакте</a>
+        </p>
+    </footer>
+</div>
+
+<script>
+    function generateNick() {
+        const firstLetter = document.getElementById("firstLetter").value.toLowerCase();
+        const minLength = parseInt(document.getElementById("minLength").value);
+        const maxLength = parseInt(document.getElementById("maxLength").value);
+
+        if (firstLetter.length !== 1 || !/^[a-zA-Z]$/.test(firstLetter)) {
+            alert("Пожалуйста, введите одну латинскую букву.");
+            return;
+        }
+
+        if (minLength < 1 || maxLength < minLength) {
+            alert("Ошибка: Проверьте длину ника.");
+            return;
+        }
+
+        const nickLength = Math.floor(Math.random() * (maxLength - minLength + 1)) + minLength;
+        let remainingChars = '';
+
+        const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+        for (let i = 1; i < nickLength; i++) {
+            remainingChars += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+
+        const generatedNick = firstLetter + remainingChars;
+
+        const nickList = document.getElementById("nickList");
+        nickList.innerHTML = 'Список:'; 
+
+        const listItem = document.createElement("li");
+        listItem.innerText = generatedNick;
+        nickList.appendChild(listItem);
+    }
+</script>
+
+</body>
+</html>

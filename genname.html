@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор имён и фамилий</title>
+    <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="name.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="site-container"> 
+    <header class="header">
+        <div>GenWord</div>
+        <div>
+            <div class="dropdown">
+                <a href="#" style="color: white; margin-right: 20px;">Наши проекты</a>
+                <div class="dropdown-content">
+                    <a href="genword.html">Генератор случайных чисел</a>
+                    <a href="genname.html">Генератор имен и фамилий</a>
+                    <a href="genrad.html">Генератор ников</a>
+                    <a href="index.html">Генератор паролей</a>
+                </div>
+            </div>
+            <a href="#" style="color: white;">Личный кабинет</a>
+        </div>
+    </header>
+
+    <section class="main-banner">
+        <div class="header-content">
+            <div class="header-left">
+                <h1>Генератор имён и фамилий</h1>
+                <p>для всех случаев</p>
+            </div>
+            <div class="header-right">
+                <p>Ищете креативное имя для своего персонажа, аватара или просто хотите поэкспериментировать с новыми сочетаниями? Наш генератор имен и фамилий поможет вам в этом!</p>
+                <ul>
+                    <li>Простой и удобный: Всего за несколько кликов вы получите множество вариантов имен и фамилий!</li>
+                    <li>Для всех случаев жизни: Подходит для игр, творчества, разработки или даже для создания анонимного профиля.</li>
+                </ul>
+                <button class="button">Попробуйте прямо сейчас!</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" style="background-color: #252422;">
+        <div class="header-left_v1">
+            <h2 style="color:#ffffff;">Важность имен и фамилий</h2>
+            <p style="color:#ffffff;">Имена и фамилии играют ключевую роль в идентификации людей, позволяя легко различать их и устанавливать социальные связи. Они отражают культурные и этнические принадлежности, а также могут иметь значительное значение для личной и семейной идентичности. В юридических и профессиональных контекстах имена служат для официального удостоверения личности, влияя на репутацию и возможности для карьерного роста. В целом, имена и фамилии не только позволяют нам общаться, но и связывают нас с историей, традициями и сообществом.</p>
+            <ul>
+                <li style="color:#ffffff;">Личная идентификация: Имя и фамилия помогают отличать одного человека от другого.</li>
+                <li style="color:#ffffff;">Коммуникация: Имена используются в повседневной жизни для обращения к людям.</li>
+                <li style="color:#ffffff;">Репутация и бренд: В профессиональной среде имя может влиять на восприятие человека.</li>
+                <li style="color:#ffffff;">Документы и права: Имена и фамилии являются важными юридическими идентификаторами.</li>
+                <li style="color:#ffffff;">Самооценка: Имя может влиять на самооценку и уверенность человека.</li>
+            </ul>
+        </div>
+        <section class="image">
+            <p><img src="v69_104.png" width="310" height="210" alt="Описание изображения"></p>
+        </section>
+    </section>
+
+    <section class="content">
+        <div class="generator-container"> 
+            <h1>Генератор Имен и Фамилий</h1>
+            
+            <label for="format">Формат:</label>
+            <select id="format">
+                <option value="ru">Русские</option>
+                <option value="en">Английские</option>
+            </select>
+    
+            <label for="gender">Пол:</label>
+            <select id="gender">
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+            </select>
+    
+            <label for="quantity">Количество:</label>
+            <input type="number" id="quantity" min="1" value="1" required>
+    
+            <button onclick="generateNames()">Сгенерировать Имена и Фамилии</button>
+    
+            <div id="result"></div>
+        </div>
+    
+        <div class="right-section">
+            <div class="content-info">
+                <p>Генератор ников — это программа или онлайн-инструмент, который автоматически создает уникальные и креативные никнеймы (псевдонимы) для пользователей.</p>
+            </div>
+    
+            <div class="content-list">
+                <ul>
+                    Список:
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <div class="content-section">
+        <h2>Советы по использованию генератора</h2>
+        <ul>
+            <li>Некоторые родители могут использовать генераторы для поиска вдохновения для имен своих детей.</li>
+            <li>Косплееры могут генерировать имена для своих персонажей или alter ego.</li>
+            <li>При создании рекламных кампаний или акций можно генерировать имена для персонажей, которые будут представлять бренд.</li>
+        </ul>
+    </div>
+    
+    <div class="content-section faq">
+        <h2>Часто задаваемые вопросы (FAQ)</h2>
+        <div class="faq-item">
+            <strong>Зачем нужен генератор имён и фамилий?</strong>
+            <p>Генератор имен и фамилий служит различным целям и может быть полезен в различных ситуациях.</p>
+        </div>
+        <div class="faq-item">
+            <strong>Как работает генератор имён и фамилий?</strong>
+            <p>Генератор имен и фамилий работает по принципу случайной генерации.</p>
+        </div>
+        <div class="faq-item">
+            <strong>Как обеспечить уникальность сгенерированных имен?</strong>
+            <p>Для обеспечения уникальности можно реализовать проверку на повторения.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 GENWORD. ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+        <p>
+            <a href="#" style="color: white;">Политика конфиденциальности</a>
+            <a href="#" style="color: white;">Телеграм</a>
+            <a href="#" style="color: white;">ВКонтакте</a>
+        </p>
+    </footer>
+</div>
+
+<script>
+    const russianNamesMale = ["Александр", "Дмитрий", "Сергей", "Иван", "Андрей"];
+    const russianNamesFemale = ["Анна", "Мария", "Екатерина", "Ольга", "Татьяна"];
+    const russianSurnames = ["Иванов", "Петров", "Сидоров", "Кузнецов", "Смирнов"];
+    
+    const englishNamesMale = ["James", "John", "Robert", "Michael", "William"];
+    const englishNamesFemale = ["Mary", "Patricia", "Linda", "Barbara", "Elizabeth"];
+    const englishSurnames = ["Smith", "Johnson", "Williams", "Jones", "Brown"];
+    
+    function getRandomElement(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+    
+    function generateNames() {
+        const format = document.getElementById("format").value;
+        const gender = document.getElementById("gender").value;
+        const quantity = parseInt(document.getElementById("quantity").value);
+        let namesList = [];
+    
+        for (let i = 0; i < quantity; i++) {
+            let name, surname;
+    
+            if (format === "ru") {
+                name = (gender === "male") ? getRandomElement(russianNamesMale) : getRandomElement(russianNamesFemale);
+                surname = getRandomElement(russianSurnames);
+            } else {
+                name = (gender === "male") ? getRandomElement(englishNamesMale) : getRandomElement(englishNamesFemale);
+                surname = getRandomElement(englishSurnames);
+            }
+    
+            namesList.push(`${name} ${surname}`);
+        }
+    
+        const resultDiv = document.getElementById("result");
+        resultDiv.innerHTML = `${namesList.join('<br>')}`; 
+        document.querySelector(".content-list").appendChild(resultDiv);
+    }
+    </script>
+
+</body>
+</html>

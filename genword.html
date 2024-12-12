@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор случайных чисел</title>
+    <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <div>GenWord</div>
+        <div>
+            <div class="dropdown">
+                <a href="#" style="color: white; margin-right: 20px;">Наши проекты</a>
+                <div class="dropdown-content">
+                    <a href="genword.html">Генератор случайных чисел</a>
+                    <a href="genname.html">Генератор имен и фамилий</a>
+                    <a href="genrad.html">Генератор ников</a>
+                    <a href="index.html">Генератор паролей</a>
+                </div>
+            </div>
+            <a href="#" style="color: white;">Личный кабинет</a>
+        </div>
+    </header>
+
+    <section class="main-banner">
+        <div class="header-left">
+            <h1>Генератор случайных чисел</h1>
+            <p>для различных целей</p>
+        </div>
+        <div class="header-right">
+            <p>Ищете быстрый и простой способ получить случайные числа? Наш генератор случайных чисел — это именно то, что вам нужно.</p>
+            <ul>
+                <li>Мгновенные результаты: Всего одним нажатием кнопки вы получите набор случайных чисел, готовых к использованию!</li>
+                <li>Настраиваемые параметры: Выбирайте диапазон значений, количество чисел в соответствии с вашими потребностями.</li>
+            </ul>
+            <button class="button">Попробуйте прямо сейчас!</button>
+        </div>
+    </section>
+
+    <div class="border-top"></div>
+    <section class="content-section" style="background-color: #252422;">
+        <h2 style="color:#ffffff;">Случайные числа</h2>
+        <p style="color:#ffffff;">Случайные числа — это числа, которые генерируются без определенного порядка или закономерности, что делает их непредсказуемыми. Они находят широкое применение в различных областях, включая:</p>
+        <ul>
+            <li style="color:#ffffff;">Статистика и исследования: Случайные числа используются для проведения выборок и экспериментов, что позволяет получить объективные результаты и избежать предвзятости.</li>
+            <li style="color:#ffffff;">Компьютерные науки: В программировании случайные числа применяются для создания алгоритмов, шифрования данных, генерации игровых событий и многого другого.</li>
+            <li style="color:#ffffff;">Игры и азартные игры: В казино, лотереях и других играх случайные числа определяют результаты и исходы, что добавляет элемент неожиданности и волнения.</li>
+            <li style="color:#ffffff;">Моделирование и симуляция: Случайные числа помогают моделировать сложные системы и процессы в науке и инженерии, позволяя исследовать различные сценарии и их последствия.</li>
+            <li style="color:#ffffff;">Криптография: Безопасность данных во многом зависит от использования случайных чисел для генерации ключей шифрования, что делает неподходящим использование предсказуемых последовательностей.</li>
+        </ul>
+        <p><img src="v76_147.png" width="1010" height="810"></p>
+    </section>
+    <div class="border-bottom"></div>
+
+    <section class="content-section">
+        <div class="generator-container">
+            <div class="generator-form">
+                <h2>Генерация чисел:</h2>
+                <label for="count">Количество чисел:</label>
+                <input type="number" id="count" value="1" min="1" max="100" style="width: 50px;">
+                <br>
+                <label for="min">Минимальное значение:</label>
+                <input type="number" id="min" value="1" style="width: 50px;">
+                <br>
+                <label for="max">Максимальное значение:</label>
+                <input type="number" id="max" value="100" style="width: 50px;">
+                <br>
+                <button class="button" id="generate-btn">Сгенерировать</button>
+            </div>
+            <div style="position: relative; flex: 1;">       
+                <div class="rand-what">
+                    <h3 style="margin-left:10px;">Генератор случайных чисел (ГСЧ) — это процесс, в ходе которого создаётся последовательность чисел или символов, которую невозможно предсказать. ГСЧ используются в азартных играх, статистической выборке, компьютерном моделировании, криптографии и других областях, где требуется непредсказуемый результат.</h3>
+                </div>
+                <div class="generated-numbers">
+                    <h2>Сгенерированные числа:</h2>
+                    <ul id="number-list" class="number-list"></ul>
+                </div>
+            </div>
+        </div> 
+
+        <h2>Советы по использованию случайных чисел</h2>
+        <ul>
+            <li>Используйте случайные числа для генерации уникальных идентификаторов.</li>
+            <li>Применяйте случайные числа в играх и лотереях.</li>
+            <li>Случайные числа могут быть полезны для тестирования и разработки.</li>
+        </ul>
+        
+        <div class="content-section faq">
+            <h2>Часто задаваемые вопросы (FAQ)</h2>
+            <div class="faq-item">
+                <strong>Зачем нужен генератор случайных чисел?</strong>
+                <p>Генератор случайных чисел помогает создать уникальные и непредсказуемые значения для различных приложений.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Как работает генератор случайных чисел?</strong>
+                <p>Он использует алгоритмы для случайной генерации чисел в заданном диапазоне.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Могу ли я использовать сгенерированные числа для всех моих проектов?</strong>
+                <p>Да, сгенерированные числа могут быть использованы в любом проекте, где это необходимо.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 GENWORD. ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+        <p>
+            <a href="#" style="color: white;">Политика конфиденциальности</a>
+            <a href="#" style="color: white;">Телеграм</a>
+            <a href="#" style="color: white;">ВКонтакте</a>
+        </p>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('generate-btn').addEventListener('click', function() {
+        const count = document.getElementById('count').value;
+        const min = parseInt(document.getElementById('min').value);
+        const max = parseInt(document.getElementById('max').value);
+
+        const numberList = document.getElementById('number-list');
+        numberList.innerHTML = '';
+
+        for (let j = 0; j < count; j++) {
+            const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+            const listItem = document.createElement('li');
+            listItem.className = 'number-item';
+            listItem.textContent = `Сгенерированное число: ${randomNum}`;
+            numberList.appendChild(listItem);
+        }
+    });
+
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+                console.log('Service Worker зарегистрирован с областью:', registration.scope);
+            }, function(err) {
+                console.log('Ошибка при регистрации Service Worker:', err);
+            });
+        });
+    }
+</script>
+
+</body>
+</html>

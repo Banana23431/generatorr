@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 50px;
+  font-family: Inter, sans-serif;
+  background-color: #FFFCF2;
+}
+img{
+  width: 1010px;
+  height: 910px;
+}
+.header {
+  background: linear-gradient(#252422, #FFFCF2);
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-banner {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(255, 252, 242, 1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-left {
+  flex: 1;
+  text-align: left;
+  font-size: 70px;
+}
+
+.header-right {
+  flex: 0;
+  text-align: left;
+  font-size: 60px;
+}
+
+.button {
+  font-size:50px;
+  height:150px;
+  width: 600px;
+  background: rgba(37, 36, 34, 1);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: rgba(64, 61, 57, 1);
+}
+
+.container {
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(#252422, #FFFCF2);
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.header-left_v1 {
+  flex: 1; 
+  text-align: left; 
+}
+
+.main-banner {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(255, 252, 242, 1);
+}
+
+.content {
+  flex-direction: column;
+  gap: 20px;
+  background-color: #FFFCF2;
+}
+
+.content-section {
+  background: rgba(255, 252, 242, 1);
+  padding: 15px;
+  flex: 1; 
+  text-align: left; 
+}
+
+.footer {
+  background: linear-gradient(#FFFCF2, #252422);
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.border-top, .border-bottom {
+  background: linear-gradient(#FFFCF2, #252422);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+.border-bottom{
+  background: linear-gradient(#FFFCF2, #252422);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  transform: rotate(180deg);
+}
+.image {
+  margin-left: 20px; 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.tips, .faq {
+  background: #e7f3fe;
+  padding: 10px;
+  border-left: 6px solid #2196F3;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+input[type=checkbox]
+{
+  zoom:4;
+}
+input[type=number]
+{
+  zoom:4;
+}
+.password-list {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.password-item {
+  background: #f9f9f9;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.generated-numbers{
+  border-radius: 5px; 
+  border: 2px solid black; 
+  border-radius: 20px; 
+  padding: 20px; 
+  flex: 1; 
+  padding-left: 10px;
+}
+.password-generator {
+  display: flex;
+  justify-content: space-between;
+}
+
+.generator-form, .generator-what, .rand-what {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.generator-form {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.generator-what {
+  flex: 1;
+}
+
+.password-list-container {
+  width: 100%;
+  padding-left: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .password-generator {
+    flex-direction: column;
+  }
+
+  .generator-form, .generator-what {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  image{
+    margin-left: 0px; 
+  }
+  img{
+    width: 210px;
+    height: 110px;
+  }
+  .button {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    font-size:20px;
+  }
+
+  .password-list-container {
+    padding: 10px;
+  }
+  input[type=checkbox]
+  {
+    zoom:1;
+  }
+  input[type=number]
+  {
+    zoom:1;
+  }
+  .header-left {
+  flex: 1;
+  text-align: left;
+  font-size: 18px;
+}
+.header-right {
+  flex: 0;
+  text-align: left;
+  font-size: 18px;
+}
+}
