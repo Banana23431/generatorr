@@ -97,7 +97,14 @@ img{
   flex: 1; 
   text-align: left; 
 }
-
+.content-section1 {
+  display: flex;
+  flex-direction: row;
+  background: rgba(255, 252, 242, 1);
+  padding: 15px;
+  flex: 1; 
+  text-align: left; 
+}
 .footer {
   background: linear-gradient(#FFFCF2, #252422);
   color: white;
