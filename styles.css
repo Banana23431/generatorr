@@ -244,6 +244,12 @@ input[type=number]
     margin-right: 0;
     margin-bottom: 20px;
   }
+  .content-section1 {
+  background: rgba(255, 252, 242, 1);
+  padding: 15px;
+  flex: 1; 
+  text-align: left; 
+}
   image{
     margin-left: 0px; 
   }
